@@ -1,0 +1,23 @@
+#########################
+## Sample Sass Lint File
+#########################
+# Linter Options
+options:
+  # Set the formatter to 'html'
+  formatter: html
+  # Output file instead of logging results
+  output-file: 'SASSLintAnalysis.html'
+# File Options
+files:
+  include: './wwwroot/styles/**/*.s+(a|c)ss'
+#Show Warnings
+rules:
+  clean-import-paths: 0
+  space-around-operator: 0
+  nesting-depth:
+    - 1
+    - max-depth: 5
+  no-ids: 0
+  no-important: 0  
+  no-url-domains: 0
+  no-url-protocols: 0  

@@ -1,0 +1,15 @@
+﻿[
+  {
+    "outputFileName": "wwwroot/dist/js/layout.min.js",
+    "inputFiles": [
+      "wwwroot/dist/js/common/hello-world.min.js",
+      "wwwroot/dist/js/common.min.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/dist/css/layout.min.css",
+    "inputFiles": [
+      "wwwroot/dist/css/common/site.min.css"
+    ]
+  }
+]

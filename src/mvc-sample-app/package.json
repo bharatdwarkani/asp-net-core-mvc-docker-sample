@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "name": "sampleapp",
+  "private": true,
+  "scripts": {
+    "postinstall": " npm i -g webpack-cli && npm i -g webpack && npm i -g sass-lint",
+    "webpack": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "awesome-typescript-loader": "5.2.1",
+    "codelyzer": "5.2.0",
+    "glob": "^7.1.6",
+    "gulp-clean-css": "4.2.0",
+    "gulp-concat": "2.6.1",
+    "gulp-cssmin": "0.2.0",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.2",
+    "gulp-uglify": "3.0.2",
+    "gulp4-run-sequence": "1.0.0",
+    "jquery": "*",
+    "merge-stream": "^2.0.0",
+    "node-sass": "4.13.0",
+    "npm": "6.13.6",
+    "requirejs": "2.3.6",
+    "shelljs": "0.8.3",
+    "tslint": "5.20.1",
+    "tslint-html-report": "2.0.3",
+    "typescript": "3.6.2",
+    "webpack": "^4.40.2"
+  },
+  "devDependencies": {
+    "@types/jquery": "3.3.31",
+    "friendly-errors-webpack-plugin": "1.7.0",
+    "gulp": "^4.0.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

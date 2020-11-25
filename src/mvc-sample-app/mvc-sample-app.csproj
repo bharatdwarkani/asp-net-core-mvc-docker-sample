@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>mvc_sample_app</RootNamespace>
+    <UserSecretsId>e13a8be5-ef75-4c63-beb3-9b3f57410b5f</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+    <Nullable>annotations</Nullable>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\sample-library-proj\sample-library-proj.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\ts\common\hello-world.ts" />
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="set NODE_ENV=$(ConfigurationName)&#xD;&#xA;cd src&#xD;&#xA;cd mvc-sample-app&#xD;&#xA;gulp build" />
+  </Target>
+
+</Project>
