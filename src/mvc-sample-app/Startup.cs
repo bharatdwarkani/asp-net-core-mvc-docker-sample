@@ -40,7 +40,11 @@ namespace mvc_sample_app
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            if (Configuration["AppSettings:EnableHTTPS"].ToLowerInvariant() == "true")
+            {
+                app.UseHttpsRedirection();
+            }
+
             app.UseStaticFiles();
 
             app.UseRouting();
