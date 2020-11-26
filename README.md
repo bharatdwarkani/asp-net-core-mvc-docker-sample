@@ -1,4 +1,9 @@
 # asp-net-core-docker-sample
-ASP.NET Core MVC application configuration sample for deploying in Docker and Kubernetes
+A sample ASP.NET Core 5.0 MVC web application to demonstrate dockerization
 
-**Work In Progress** will update here soon a simple microservices (ASP.NET Core API, MVC, Angular App) which can run in docker and K8s with yaml manifests and docker file
+Read this blog for more details
+https://blog.sharetechlinks.com/how-to-create-a-docker-image-for-containerizing-an-asp-net-core-mvc-5-0-web-application/#Step_1_Clone_a_sample_project_from_GitHub
+
+
+*Work in progress* : Including Yaml files for deploying app in Google Kubernetes Engine 
+
